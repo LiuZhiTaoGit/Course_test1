@@ -1,0 +1,7 @@
+tomcat中的Catalina与Coyote组件的功能分别是什么？
+
+
+Catalina是conf文件下的文件，Catalina是Tomcat的servlet容器。Catalina实现了Sun Microsystems对servlet和JavaServer Pages（JSP）的规范
+
+tomcat组件的实现首先是connector
+tomcat实现connector部分的名字是coyote，实现了很多的不同的connector，默认，常见的，的是BIO Connector，使用传统的IO的操作的方式，它支持HTTP 1.1协议作为Web服务器。这允许Catalina（名义上是Java Servlet或JSP容器）也可以作为将本地文件作为HTTP文档提供的普通Web服务器。
